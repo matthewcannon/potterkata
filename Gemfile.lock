@@ -7,8 +7,14 @@ GEM
     guard-bundler (1.0.0)
       bundler (~> 1.0)
       guard (~> 1.1)
+    guard-test (0.8.0)
+      guard (>= 1.1)
+      test-unit (~> 2.2)
     listen (0.5.2)
+    ruby_gntp (0.3.4)
+    test-unit (2.5.4)
     thor (0.16.0)
+    wdm (0.0.3)
 
 PLATFORMS
   x86-mingw32
@@ -16,3 +22,6 @@ PLATFORMS
 DEPENDENCIES
   guard
   guard-bundler
+  guard-test
+  ruby_gntp
+  wdm
