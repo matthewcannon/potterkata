@@ -1,6 +1,5 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
-gem 'wdm'
 gem 'guard'
 gem 'guard-bundler'
 gem 'guard-test'
