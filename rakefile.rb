@@ -5,5 +5,5 @@ task :guard do
 end
 
 task :test do
-	system 'echo test task invoked'
+	system 'ruby test.rb'
 end
