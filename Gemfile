@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'wdm'
 gem 'guard'
 gem 'guard-bundler'
-gem 'guard-test'
+gem 'guard-rake'
 gem 'ruby_gntp'
