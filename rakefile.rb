@@ -5,5 +5,5 @@ task :guard do
 end
 
 task :test do
-	system 'ruby test.rb'
+	system 'test/_test.rb'
 end

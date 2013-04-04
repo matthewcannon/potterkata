@@ -3,5 +3,5 @@ guard :bundler do
 end
 
 guard 'rake', :task => 'test' do
-  watch('test.rb')
+  watch('test/_test.rb')
 end
