@@ -2,6 +2,6 @@ guard :bundler do
 	watch('Gemfile')
 end
 
-guard 'rake', :task => 'test' do
+guard :test do
   watch('test/_test.rb')
 end
