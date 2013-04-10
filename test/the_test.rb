@@ -1,10 +1,11 @@
 require 'test/unit'
 
 class BuyingSingleBooks < Test::Unit::TestCase
-	def test_shopper_is_billed_8_for_buying_one_book
+	def test_shopper_is_billed_book_price_after_buying_one_book
 		shopper = self
-		Shop.new(shopper).buy()
-		assert_equal @@bill, 8
+		book_price = 8
+		Shop.new(shopper, book_price).buy()
+		assert_equal @@bill, book_price
 	end
 
 	def new_bill(bill)
@@ -13,11 +14,12 @@ class BuyingSingleBooks < Test::Unit::TestCase
 end
 
 class Shop
-	def initialize(shopper)
+	def initialize(shopper, book_price)
 		@@shopper = shopper 
+		@@book_price = book_price
 	end
 
 	def buy
-		@@shopper.new_bill(8)
+		@@shopper.new_bill(@@book_price)
 	end
 end
